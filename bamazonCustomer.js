@@ -82,7 +82,7 @@ function start() {
                 //call this function.
                 if (inventoryAmount < answer.amount) {
 
-                    console.log("Only " + inventoryAmount + " of this product is available.  Please try again or select another product.");
+                    console.log("Only " + inventoryAmount + " of this product is available.  Please try again or select another product.\n");
                     start();
                 }
 
@@ -105,7 +105,8 @@ function start() {
                                 item_id: itemID[0]
                             }
                         ]);
-
+                        
+                        console.log("");
                         start();
                 }
 
